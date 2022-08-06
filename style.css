@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-    --yellow: #f9ca24;
+    --yellow: rgb(255, 0, 123);
 }
 
 * {
@@ -17,8 +17,8 @@
 }
 
 *::selection {
-    background: var(--yellow);
-    color: #333;
+    background: var(--pink);
+    color: pink;
 }
 
 html {
@@ -35,11 +35,11 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--yellow);
+    background: var(--green);
 }
 
 body {
-    background: #111;
+background: radial-gradient(circle, rgba(27, 2, 19, 1) 67%, rgba(176, 5, 149, 1) 100%);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -74,7 +74,7 @@ section {
     font-size: 4rem;
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
-    color: #fff;
+    color: white;
 }
 
 .heading span {
@@ -88,7 +88,8 @@ header {
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #1a1a1a;
+    background: radial-gradient(circle, rgba(175, 116, 191, 1) 67%, rgba(118, 10, 164, 1) 100%);
+    /*background:#1a1a1a;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,8 +130,8 @@ header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #333;
-    color: #fff;
+    background: green;
+    color: black;
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -143,7 +144,7 @@ header .navbar ul li a:hover {
     position: fixed;
     top: 2rem;
     right: 2rem;
-    background: #333;
+    background: pink;
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -214,7 +215,8 @@ header .navbar ul li a:hover {
 
 .about .row .counter .box {
     width: 20rem;
-    background: #222;
+    border-radius: 25%;
+    background: pink;/* #222;*/
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -280,8 +282,16 @@ header .navbar ul li a:hover {
     color: #fff;
     background: var(--yellow);
 }
+.portfolio{
+    align-items: center;
+}
+.my{
+    align-items: center;
+    margin-left: 45%;
+}
 
-.portfolio .box-container {
+
+/*.portfolio .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,7 +316,7 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
-}
+}*/
 
 .contact .row {
     display: flex;
@@ -331,8 +341,8 @@ header .navbar ul li a:hover {
 .contact .row form .box {
     padding: 1.5rem;
     margin: 1rem 0;
-    background: #3333;
-    color: #fff;
+    background: bisque;
+    color: black;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
